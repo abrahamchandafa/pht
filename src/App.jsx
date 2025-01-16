@@ -1,27 +1,39 @@
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import './App.css';
-import { CssBaseline, CssVarsProvider } from '@mui/joy';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./App.css";
+import { CssBaseline, CssVarsProvider, Box } from "@mui/joy";
+import bgImg from "./media/bg11.png";
 
 function App() {
   return (
     <CssVarsProvider>
       <CssBaseline>
         <BrowserRouter>
-          <Header />
-          <main>
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-            </Routes> 
-          </main>
-          <Footer />
+          <Box
+            sx={{
+              backgroundImage: `url(${bgImg})`,
+              backgroundSize: "cover",
+              position: "fixed",
+              left: "0",
+              right: "0",
+              top: "0",
+              bottom: "0",
+            }}
+          >
+            <Box>
+              <Header />
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+              </Routes>
+              <Footer />
+            </Box>
+          </Box>
         </BrowserRouter>
       </CssBaseline>
-  </CssVarsProvider>
-  )
+    </CssVarsProvider>
+  );
 }
 
-export default App
+export default App;

@@ -5,7 +5,9 @@ function Footer () {
         <Sheet
             sx={{
                 backgroundColor: "rgba(50,50,50,0.5)",
-                height: "60px"
+                height: "60px",
+                position: "sticky",
+                bottom: "0"
             }}>
             Footer
         </Sheet>
