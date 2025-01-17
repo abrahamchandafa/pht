@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
 import { CssBaseline, CssVarsProvider, Box } from "@mui/joy";
-import bgImg from "./media/bg11.png";
+import bgImg from "./media/3.png";
 
 function App() {
   return (
@@ -14,12 +14,13 @@ function App() {
           <Box
             sx={{
               backgroundImage: `url(${bgImg})`,
-              backgroundSize: "cover",
-              position: "fixed",
+              backgroundSize: "fill",
+              position: "absolute",
               left: "0",
               right: "0",
               top: "0",
               bottom: "0",
+              zIndex: -1
             }}
           >
             <Box>

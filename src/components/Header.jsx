@@ -41,19 +41,19 @@ function Header () {
                     display: "flex",
                     justifyContent: "space-between"
                 }}>
-            <Link level="h3" sx={{mx: "5px"}} href="#" variant="outlined" textColor={"common.white"} color='neutral'>
+            <Link level="h3" sx={{mx: "5px"}} href="#" variant="plain" textColor={"common.white"} color='neutral'>
                 About Us
             </Link>
-            <Link level="h3"  sx={{mx: "5px"}} href="#" variant="outlined" textColor={"common.white"}  color='neutral'>
+            <Link level="h3"  sx={{mx: "5px"}} href="#" variant="plain" textColor={"common.white"}  color='neutral'>
                 Products
             </Link>
-            <Link level="h3"  sx={{mx: "5px"}} href="#" variant="outlined" textColor={"common.white"}  color='neutral'>
+            <Link level="h3"  sx={{mx: "5px"}} href="#" variant="plain" textColor={"common.white"}  color='neutral'>
                 Services
             </Link>
-            <Link level="h3"  sx={{mx: "5px"}} href="#" variant="outlined" textColor={"common.white"}  color='neutral'>
+            <Link level="h3"  sx={{mx: "5px"}} href="#" variant="plain" textColor={"common.white"}  color='neutral'>
                 Projects
             </Link>
-            <Link level="h3"  sx={{mx: "5px"}} href="#" variant="outlined" textColor={"common.white"}  color='neutral'>
+            <Link level="h3"  sx={{mx: "5px"}} href="#" variant="plain" textColor={"common.white"}  color='neutral'>
                 Insights
             </Link>
             </Box>
@@ -61,7 +61,7 @@ function Header () {
                 <Button 
                     sx={{
                         mx: "5px",
-                        color: 'white',
+                        color: 'gold',
                         '&:hover': {
                             backgroundColor: 'black', 
                         }}}
@@ -69,7 +69,7 @@ function Header () {
                 <Button 
                     sx={{
                         mx: "5px",
-                        color: 'white',
+                        color: 'gold',
                         '&:hover': {
                             backgroundColor: 'black', 
                         }}}
