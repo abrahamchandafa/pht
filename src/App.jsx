@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
 import { CssBaseline, CssVarsProvider, Box } from "@mui/joy";
-import bgImg from "./media/3.png";
+import bgImg from "./media/1.png";
 
 function App() {
   return (
@@ -20,7 +20,11 @@ function App() {
               right: "0",
               top: "0",
               bottom: "0",
-              zIndex: -1
+              zIndex: -1,
+              backgroundRepeat: 'no-repeat',
+              backgroundAttachment: 'fixed',
+              WebkitBackgroundSize: 'cover', // For Safari support
+              mozBackgroundSize: 'cover',    // For Firefox support
             }}
           >
             <Box>
