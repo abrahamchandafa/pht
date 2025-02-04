@@ -3,26 +3,23 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
-import { CssBaseline, CssVarsProvider, Box } from "@mui/joy";
+import { Box } from "@mui/joy";
 import bgImg from "./media/1.png";
 
 function App() {
   return (
-    <CssVarsProvider>
-      <CssBaseline>
         <BrowserRouter>
           <Box
             sx={{
               backgroundImage: `url(${bgImg})`,
-              backgroundSize: "fill",
-              position: "absolute",
+              backgroundSize: "cover",
+              width: "100%",
               left: "0",
               right: "0",
               top: "0",
               bottom: "0",
               zIndex: -1,
               backgroundRepeat: 'no-repeat',
-              backgroundAttachment: 'fixed',
               WebkitBackgroundSize: 'cover', // For Safari support
               mozBackgroundSize: 'cover',    // For Firefox support
             }}
@@ -36,8 +33,6 @@ function App() {
             </Box>
           </Box>
         </BrowserRouter>
-      </CssBaseline>
-    </CssVarsProvider>
   );
 }
 

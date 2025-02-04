@@ -10,6 +10,7 @@ function Home() {
         display: "flex",
         justifyContent: "flex-start",
         width: "100%",
+        height: "auto",
         padding: 2,
         backgroundColor: "rgba(0, 0, 0, 0.2)",
       }}
