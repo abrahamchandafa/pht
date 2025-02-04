@@ -5,6 +5,10 @@ on:
         branches:
             - main
             - maseter
+    push:
+        branches:
+            - main
+            - maseter
 
 jobs:
     test:
